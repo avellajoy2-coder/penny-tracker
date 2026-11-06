@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny | Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Penny.</h1>
+        <p>Your money, your control.</p>
+
+        <h2>My Dashboard</h2>
+
+        <h3>Add an Expense</h3>
+
+        <form id="expenseForm">
+            <input type="text" id="title" placeholder="Expense name" required>
+            <input type="number" id="amount" placeholder="Amount" min="0.01" step="0.01" required>
+
+            <select id="category" required>
+                <option value="">Select category</option>
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Bills">Bills</option>
+                <option value="Education">Education</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <input type="date" id="date" required>
+            <input type="text" id="description" placeholder="Description (optional)">
+
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <p id="message"></p>
+
+        <h3>Expense History</h3>
+        <div id="expenseList"></div>
+
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>

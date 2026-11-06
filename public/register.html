@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny | Register</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Penny.</h1>
+        <p>Start managing your money today.</p>
+
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Full name" required>
+            <input type="email" id="email" placeholder="Email address" required>
+            <input type="password" id="password" placeholder="Password (minimum 8 characters)" minlength="8" required>
+            <button type="submit">Create Account</button>
+        </form>
+
+        <p id="message"></p>
+
+        <p>Already have an account?
+            <a href="/">Login here</a>
+        </p>
+    </div>
+
+    <script src="/js/auth.js"></script>
+</body>
+</html>
